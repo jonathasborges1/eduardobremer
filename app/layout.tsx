@@ -4,6 +4,10 @@ export const metadata: Metadata = {
   title: "Dr. Eduardo Bremer | Advocacia Criminal, Cível, Trabalhista e Previdenciária",
   description:
     "Dr. Eduardo Bremer, advogado OAB/ES 37.747 e OAB/BA 83.916, com atendimento presencial em Mucuri/BA, Vitória/ES e orientação online.",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    shortcut: ["/icon.svg"],
+  },
   openGraph: {
     title: "Dr. Eduardo Bremer | Advocacia",
     description:
