@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import {
-  ArrowLeft,
   ArrowRight,
   BriefcaseBusiness,
   Building2,
@@ -125,24 +124,12 @@ const css = `
   :root{
     --navy:#0E0E0E;--navy2:#171717;--ink:#050505;--gold:#D4A017;
     --gold2:#9B6A16;--goldLight:#7A5412;--paper:#ffffff;--white:#fff;--muted:#7B8493;
-    --line:rgba(255,255,255,.14);--line2:rgba(5,5,5,.12);--top:52px;--nav:74px;
+    --line:rgba(255,255,255,.14);--line2:rgba(5,5,5,.12);--top:0px;--nav:74px;
   }
   section[id]{scroll-margin-top:calc(var(--top) + var(--nav) + 18px)}
   .eb{min-height:100vh;background:var(--paper);font-family:'Calibri','Calibri Body',Candara,Optima,sans-serif;color:var(--ink);overflow-x:clip}
   .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
-
-  /* topbar */
-  .topbar{position:fixed;z-index:60;inset:0 0 auto;height:var(--top);display:flex;align-items:center;justify-content:center;background:#050505;color:rgba(255,255,255,.7);border-bottom:1px solid rgba(214,169,51,.22);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-  .topbarText{display:inline-flex;align-items:center;justify-content:center;gap:8px}
-  .topbarDot{width:6px;height:6px;border-radius:999px;background:var(--gold);flex:none}
-  .topbarText strong{color:#fff;font-weight:800}
-  .topbarSub{text-transform:none;letter-spacing:.04em}
-  .topbarSub a{color:#22d3ee;font-weight:800;text-decoration:none}
-  .topbarSub a:hover{color:var(--gold)}
-  .topbarSep{color:rgba(255,255,255,.28)}
-  .back{position:absolute;left:12px;display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 10px;border-radius:6px;color:rgba(255,255,255,.62)}
-  .back:hover{background:rgba(255,255,255,.08);color:#fff}
 
   /* nav */
   .nav{position:fixed;z-index:59;inset:var(--top) 0 auto;height:var(--nav);background:rgba(5,5,5,.96);backdrop-filter:blur(16px);transition:.25s box-shadow}
@@ -413,8 +400,7 @@ const css = `
     .final{clip-path:polygon(0 32px,100% 0,100% 100%,0 100%);padding-top:calc(58px + 32px)}
   }
   @media (max-width:560px){
-    :root{--top:58px;--nav:68px}
-    .topbar{padding:0 70px;text-align:center;font-size:9px}.back span{display:none}
+    :root{--top:0px;--nav:68px}
     .brand{min-width:0}.brandLogo{width:168px;height:48px}.brandMeta{display:none}
     .wrap,.navin{width:min(100% - 28px,1180px)}
     h1{font-size:clamp(38px,12vw,48px);line-height:1;max-width:100%}
@@ -508,33 +494,6 @@ export default function EduardoBremerPage() {
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
       <main className="eb">
-        <div className="topbar">
-          <a
-            className="back"
-            href="https://lumasites.com.br/proposta-comercial"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ArrowLeft size={15} />
-            <span>Voltar</span>
-          </a>
-          <span className="topbarText">
-            <span className="topbarDot" aria-hidden="true" />
-            <strong>Proposta comercial</strong>
-            <span className="topbarSep">·</span>
-            <span className="topbarSub">
-              Prévia conceitual desenvolvida pela{" "}
-              <a
-                href="https://lumasites.com.br"
-                target="_blank"
-                rel="noreferrer"
-              >
-                lumasites.com.br<span className="sr"> (abre em nova aba)</span>
-              </a>
-            </span>
-          </span>
-        </div>
-
         <header className={`nav${scrolled ? " on" : ""}`}>
           <div className="navin">
             <a className="brand" href="#inicio" aria-label="Ir para o início">
@@ -1004,7 +963,7 @@ export default function EduardoBremerPage() {
                   83.916
                 </span>
                 <span>
-                  Site por{" "}
+                  Desenvolvido por{" "}
                   <a
                     href="https://lumasites.com.br"
                     target="_blank"
