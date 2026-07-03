@@ -35,12 +35,14 @@ export function FinalFooter() {
               <span className="footerRole">Advocacia estratégica</span>
               <span className="footerOab">OAB/ES 37.747 · OAB/BA 83.916</span>
               <p>
-                Atendimento jurídico presencial em Mucuri/BA e Vitória/ES,
-                com orientação online nas áreas Criminal, Cível, Trabalhista
-                e Previdenciária.
+                Atendimento jurídico presencial em Mucuri/BA, Teixeira de
+                Freitas/BA e Vitória/ES, com orientação online nas áreas
+                Criminal, Cível, Trabalhista e Previdenciária.
               </p>
               <p className="footerAddr">
                 Rua Severino Vieira, 83 · Mucuri/BA
+                <br />
+                Rua do Haiti, 260 · Bela Vista · Teixeira de Freitas/BA
                 <br />
                 Av. Scherrer Souza, 2230 · Sala 401 · Vitória/ES
               </p>

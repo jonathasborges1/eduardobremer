@@ -12,9 +12,10 @@ export function Hero({ parallaxY }: { parallaxY: number }) {
           Direito claro para quem precisa de <em>direção</em>.
         </h1>
         <p className="heroLead">
-          Atendimento jurídico presencial em Mucuri/BA e Vitória/ES, com
-          orientação online para quem precisa agir com segurança nas áreas
-          Criminal, Cível, Trabalhista e Previdenciária.
+          Atendimento jurídico presencial em Mucuri/BA, Teixeira de
+          Freitas/BA e Vitória/ES, com orientação online para quem precisa
+          agir com segurança nas áreas Criminal, Cível, Trabalhista e
+          Previdenciária.
         </p>
         <div className="actions">
           <a className="btnGold" href={WA} target="_blank" rel="noreferrer">
@@ -35,7 +36,7 @@ export function Hero({ parallaxY }: { parallaxY: number }) {
           </div>
           <div className="heroCred">
             <strong>Presencial · Online</strong>
-            <span>Mucuri/BA · Vitória/ES</span>
+            <span>Mucuri/BA · Teixeira de Freitas/BA · Vitória/ES</span>
           </div>
         </div>
       </div>

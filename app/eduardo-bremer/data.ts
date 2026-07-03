@@ -129,4 +129,14 @@ export const offices: OfficeLocation[] = [
     iframeTitle: "Mapa do escritório em Vitória, Espírito Santo",
     revealDelay: "120",
   },
+  {
+    city: "Teixeira de Freitas / BA",
+    address: "Rua do Haiti, nº 260 · Bela Vista · CEP 45.990-301",
+    mapEmbedSrc:
+      "https://maps.google.com/maps?q=-17.5433819,-39.7376784&output=embed&z=16&hl=pt-BR",
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=Rua+do+Haiti,+260,+Bela+Vista,+Teixeira+de+Freitas,+BA,+45990-301",
+    iframeTitle: "Mapa do escritório em Teixeira de Freitas, Bahia",
+    revealDelay: "240",
+  },
 ];

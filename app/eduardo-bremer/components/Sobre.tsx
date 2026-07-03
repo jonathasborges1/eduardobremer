@@ -24,8 +24,8 @@ export function Sobre() {
             orientar pessoas em decisões jurídicas relevantes.
           </p>
           <p className="bio">
-            Atendimento presencial em Mucuri/BA e Vitória/ES, e online para
-            todo o Brasil.
+            Atendimento presencial em Mucuri/BA, Teixeira de Freitas/BA e
+            Vitória/ES, e online para todo o Brasil.
           </p>
           <div className="formation">
             <span className="formationLabel">Formação</span>

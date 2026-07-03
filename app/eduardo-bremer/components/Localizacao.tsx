@@ -14,13 +14,14 @@ export function Localizacao({
             <span className="label">Localização</span>
             <h2 className="title">
               <span className="desktopOnly">
-                Atendimento em Mucuri/BA, Vitória/ES e online.
+                Atendimento em Mucuri/BA, Teixeira de Freitas/BA, Vitória/ES
+                e online.
               </span>
               <span className="mobileOnly">Atendimento presencial e online</span>
             </h2>
           </div>
           <p className="lead">
-            Atendimento presencial nos dois endereços e orientação online
+            Atendimento presencial nos três endereços e orientação online
             pelo WhatsApp para avaliar o melhor encaminhamento do seu caso.
           </p>
         </div>
@@ -32,7 +33,7 @@ export function Localizacao({
             <Building2 size={14} /> Presencial · Online
           </div>
           <div className="locationBarItem">
-            <MapPin size={14} /> Mucuri/BA · Vitória/ES
+            <MapPin size={14} /> Mucuri/BA · Teixeira de Freitas/BA · Vitória/ES
           </div>
         </div>
         <div className="mapsCards">
