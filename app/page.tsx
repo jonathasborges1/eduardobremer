@@ -1,45 +1,33 @@
-"use client";
-
-import { useState } from "react";
-import "./globals.css";
-import "./eduardo-bremer/eduardo-bremer.css";
+import { JsonLd } from "./eduardo-bremer/JsonLd";
 import { ComoFunciona } from "./eduardo-bremer/components/ComoFunciona";
 import { Especialidades } from "./eduardo-bremer/components/Especialidades";
+import { Faq } from "./eduardo-bremer/components/Faq";
 import { FinalFooter } from "./eduardo-bremer/components/FinalFooter";
-import { Header } from "./eduardo-bremer/components/Header";
 import { Hero } from "./eduardo-bremer/components/Hero";
 import { Localizacao } from "./eduardo-bremer/components/Localizacao";
-import { MapModal } from "./eduardo-bremer/components/MapModal";
-import { MobileMenu } from "./eduardo-bremer/components/MobileMenu";
+import { RevealInit } from "./eduardo-bremer/components/RevealInit";
+import { SiteChrome } from "./eduardo-bremer/components/SiteChrome";
 import { Sobre } from "./eduardo-bremer/components/Sobre";
 import { WaFloat } from "./eduardo-bremer/components/WaFloat";
-import type { OfficeLocation } from "./eduardo-bremer/data";
-import { useEscapeKey, useHeaderScroll, useScrollReveal } from "./eduardo-bremer/hooks";
 
 export default function EduardoBremerPage() {
-  const [open, setOpen] = useState(false);
-  const [mapModal, setMapModal] = useState<OfficeLocation | null>(null);
-  const { scrolled, parallaxY } = useHeaderScroll();
-
-  useScrollReveal();
-  useEscapeKey(setMapModal);
-
   return (
     <>
       <main className="eb">
-        <Header scrolled={scrolled} open={open} onToggleMenu={() => setOpen(!open)} />
-        <MobileMenu open={open} onClose={() => setOpen(false)} />
+        <SiteChrome />
 
-        <Hero parallaxY={parallaxY} />
+        <Hero />
         <Sobre />
         <Especialidades />
         <ComoFunciona />
-        <Localizacao onOpenMap={setMapModal} />
+        <Localizacao />
+        <Faq />
         <FinalFooter />
       </main>
 
       <WaFloat />
-      <MapModal office={mapModal} onClose={() => setMapModal(null)} />
+      <RevealInit />
+      <JsonLd />
     </>
   );
 }

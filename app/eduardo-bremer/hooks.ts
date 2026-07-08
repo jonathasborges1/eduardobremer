@@ -1,24 +1,31 @@
 import { useEffect, useState } from "react";
 
-/**
- * Tracks page scroll to drive the sticky-header shadow state and the
- * hero image's parallax offset.
- */
-export function useHeaderScroll() {
+/** Tracks page scroll to drive the sticky-header shadow state. */
+export function useScrolled() {
   const [scrolled, setScrolled] = useState(false);
-  const [parallaxY, setParallaxY] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 20);
-      setParallaxY(window.scrollY * 0.12);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 20);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return { scrolled, parallaxY };
+  return scrolled;
+}
+
+/** Tracks page scroll to drive the hero image's parallax offset. */
+export function useParallax() {
+  const [parallaxY, setParallaxY] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setParallaxY(window.scrollY * 0.12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return parallaxY;
 }
 
 /** Adds the `revealed` class to every `[data-reveal]` element once it enters the viewport. */

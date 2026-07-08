@@ -19,8 +19,8 @@ export function Sobre() {
           <h2 className="title">Dr. Eduardo Bremer</h2>
           <p className="bio">
             Advogado inscrito na OAB/ES 37.747 e OAB/BA 83.916, com atuação
-            nas áreas Criminal, Cível, Trabalhista e Previdenciária. Sua
-            atuação combina técnica, escuta e comunicação acessível para
+            nas áreas Criminal, Cível, Trabalhista e Previdenciária. Seu
+            trabalho combina técnica, escuta e comunicação acessível para
             orientar pessoas em decisões jurídicas relevantes.
           </p>
           <p className="bio">

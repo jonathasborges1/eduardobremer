@@ -1,21 +1,28 @@
+"use client";
+
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { IMG, WA } from "../data";
+import { useParallax } from "../hooks";
 import { WaIcon } from "../icons";
 
-export function Hero({ parallaxY }: { parallaxY: number }) {
+export function Hero() {
+  const parallaxY = useParallax();
+
   return (
     <section id="inicio" className="hero" aria-label="Apresentação">
       <div className="heroCopy">
         <span className="eyebrow">Advocacia estratégica</span>
         <h1>
-          Direito claro para quem precisa de <em>direção</em>.
+          Advogado Trabalhista, Criminal, Cível e Previdenciário em{" "}
+          <em>Mucuri, Teixeira de Freitas e Vitória</em>
         </h1>
+        <p className="heroTagline">
+          Direito claro para quem precisa de <em>direção</em>.
+        </p>
         <p className="heroLead">
-          Atendimento jurídico presencial em Mucuri/BA, Teixeira de
-          Freitas/BA e Vitória/ES, com orientação online para quem precisa
-          agir com segurança nas áreas Criminal, Cível, Trabalhista e
-          Previdenciária.
+          Atendimento presencial e online em todo o Brasil, com análise
+          técnica, estratégia e comunicação clara em cada etapa do seu caso.
         </p>
         <div className="actions">
           <a className="btnGold" href={WA} target="_blank" rel="noreferrer">
@@ -31,20 +38,20 @@ export function Hero({ parallaxY }: { parallaxY: number }) {
             <span>OAB/BA 83.916</span>
           </div>
           <div className="heroCred">
-            <strong>Criminal · Cível</strong>
-            <span>Trabalhista · Prev.</span>
+            <strong>Pós-graduado</strong>
+            <span>Direito do Trabalho</span>
           </div>
           <div className="heroCred">
             <strong>Presencial · Online</strong>
-            <span>Mucuri/BA · Teixeira de Freitas/BA · Vitória/ES</span>
+            <span>Atendimento em todo o Brasil</span>
           </div>
         </div>
       </div>
-      <div className="heroMedia" aria-hidden="true">
+      <div className="heroMedia">
         <Image
           className="heroImg"
           src={IMG.hero}
-          alt=""
+          alt="Dr. Eduardo Bremer, advogado em Mucuri, Teixeira de Freitas e Vitória"
           fill
           sizes="(max-width: 980px) 100vw, 50vw"
           priority

@@ -36,10 +36,11 @@ export function Especialidades() {
             />
           </div>
           <div className="areaGrid">
-            {areas.map(({ Icon, title, text }, i) => (
+            {areas.map(({ id, Icon, title, text }, i) => (
               <article
                 className="area"
-                key={title}
+                id={id}
+                key={id}
                 data-reveal=""
                 data-delay={String(i * 80)}
               >

@@ -1,17 +1,30 @@
 import type { Metadata } from "next";
+import "./globals.css";
+import "./eduardo-bremer/eduardo-bremer.css";
+
+const TITLE =
+  "Advogado Trabalhista, Criminal, Cível e Previdenciário em Mucuri, Teixeira de Freitas e Vitória | Dr. Eduardo Bremer";
+const SOCIAL_TITLE =
+  "Advogado em Mucuri, Teixeira de Freitas e Vitória | Dr. Eduardo Bremer";
+const DESCRIPTION =
+  "Dr. Eduardo Bremer (OAB/ES 37.747 · OAB/BA 83.916). Atuação em Direito Trabalhista, Penal, Cível e Previdenciário. Atendimento presencial em Mucuri/BA, Teixeira de Freitas/BA e Vitória/ES, e orientação online.";
 
 export const metadata: Metadata = {
-  title: "Dr. Eduardo Bremer | Advocacia Criminal, Cível, Trabalhista e Previdenciária",
-  description:
-    "Dr. Eduardo Bremer, advogado OAB/ES 37.747 e OAB/BA 83.916, com atendimento presencial em Mucuri/BA, Teixeira de Freitas/BA, Vitória/ES e orientação online.",
+  metadataBase: new URL("https://eduardobremer.com.br"),
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     shortcut: ["/icon.svg"],
   },
   openGraph: {
-    title: "Dr. Eduardo Bremer | Advocacia",
-    description:
-      "Atendimento jurídico presencial em Mucuri/BA, Teixeira de Freitas/BA e Vitória/ES, com orientação online nas áreas Criminal, Cível, Trabalhista e Previdenciária.",
+    title: SOCIAL_TITLE,
+    description: DESCRIPTION,
+    url: "/",
+    siteName: "Dr. Eduardo Bremer · Advocacia",
     locale: "pt_BR",
     type: "website",
     images: [
@@ -25,9 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Eduardo Bremer | Advocacia",
-    description:
-      "Atendimento jurídico presencial em Mucuri/BA, Teixeira de Freitas/BA e Vitória/ES, com orientação online nas áreas Criminal, Cível, Trabalhista e Previdenciária.",
+    title: SOCIAL_TITLE,
+    description: DESCRIPTION,
     images: ["/images/eduardobremer/eduardo-bremer-advogado-04-feed-05.jpg"],
   },
 };
