@@ -16,7 +16,7 @@ export const WA = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
 export const IG = "https://www.instagram.com/ehbremer.adv/";
 
 export const IMG = {
-  hero: "/images/eduardobremer/eduardo-bremer-advogado-08.jpg",
+  hero: "/images/eduardobremer/eduardo-bremer-hero-recriada.png",
   sobre: "/images/eduardobremer/instagram-feed/ehbremer-instagram-feed-05.jpg",
   portrait:
     "/images/eduardobremer/instagram-feed/ehbremer-instagram-feed-05.jpg",
