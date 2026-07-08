@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/eduardobremer/eduardo-bremer-advogado-04.jpg",
+        url: "/images/eduardobremer/eduardo-bremer-advogado-04-feed-05.jpg",
         width: 1200,
         height: 813,
         alt: "Dr. Eduardo Bremer, advogado",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Dr. Eduardo Bremer | Advocacia",
     description:
       "Atendimento jurídico presencial em Mucuri/BA, Teixeira de Freitas/BA e Vitória/ES, com orientação online nas áreas Criminal, Cível, Trabalhista e Previdenciária.",
-    images: ["/images/eduardobremer/eduardo-bremer-advogado-04.jpg"],
+    images: ["/images/eduardobremer/eduardo-bremer-advogado-04-feed-05.jpg"],
   },
 };
 
