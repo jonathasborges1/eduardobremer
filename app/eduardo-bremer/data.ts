@@ -155,6 +155,7 @@ export const formation = [
   "Bacharel em Direito — IESFAVI - Instituto de Ensino Superior e Formação Avançada de Vitória (2014–2018)",
   "Especialista em Direito e Prática Trabalhista / Latu Sensu — Instituto IMADEC (2023)",
   "Pós-graduado em Direito do Trabalho — Faculdade Regional de Filosofia, Ciências e Letras de Candeias Bahia (2024)",
+  "Especializando em Direito Empresarial Trabalhista — Faculdade Faciencia",
 ];
 
 export type OfficeLocation = {
