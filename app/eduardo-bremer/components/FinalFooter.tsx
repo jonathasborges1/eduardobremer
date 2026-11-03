@@ -93,8 +93,8 @@ export function FinalFooter() {
             </span>
             <span>
               Desenvolvido por{" "}
-              <a href="https://lumasites.com.br" target="_blank" rel="noreferrer">
-                LumaSites<span className="sr"> (abre em nova aba)</span>
+              <a href="https://lumasites.com.br/" target="_blank" rel="noreferrer">
+                lumasites.com.br<span className="sr"> (abre em nova aba)</span>
               </a>
             </span>
           </div>
