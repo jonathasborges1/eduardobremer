@@ -7,9 +7,9 @@ import {
 } from "lucide-react";
 
 export const SITE_URL = "https://eduardobremer.com.br";
-export const PHONE = "+55 73 9811-7194";
+export const PHONE = "+55 27 99966-9408";
 
-export const WA_NUMBER = "557398117194";
+export const WA_NUMBER = "5527999669408";
 export const WA = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
   "Olá, Dr. Eduardo Bremer! Gostaria de falar sobre atendimento jurídico.",
 )}`;
